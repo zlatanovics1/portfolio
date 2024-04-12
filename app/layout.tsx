@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Poppins } from "next/font/google";
+import { Inter, Montserrat, Poppins } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/Navbar";
 
@@ -21,7 +21,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${inter.className} overflow-x-hidden bg-gray-950 text-gray-200 pt-10`}
+        className={`${inter.className} overflow-x-hidden bg-gray-950 text-gray-300 pt-10`}
       >
         <Navbar />
         {children}
