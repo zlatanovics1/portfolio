@@ -21,15 +21,25 @@ html::-webkit-scrollbar {
   }
 }
 
+@layer utilities {
+  .project-image-container::before {
+    /* background: conic-gradient(
+      rgba(109, 40, 217, 0.9) 20deg,
+      rgba(67, 56, 202, 0.9) 20deg,
+      transparent
+    ); */
+    animation: spin 3s linear infinite;
+
+    @apply bg-gradient-to-r from-indigo-700 via-indigo-600 to-violet-700 absolute left-[-40%]   top-[10%] h-[80%] w-[180%] content-[''];
+  }
+}
+
 .animate-spinner {
-  animation: spin 3s linear infinite;
+  animation: spin 4s linear infinite;
 }
 
 @keyframes spin {
-  from {
-    rotate: 0;
-  }
-  to {
-    rotate: 360deg;
+  100% {
+    transform: rotate(-360deg);
   }
 }

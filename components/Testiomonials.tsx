@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function Testiomonials() {
   return (
-    <div className="mt-32 content-container py-10 px-20 h-72 rounded-xl border-2 border-indigo-700 flex gap-24 items-center justify-center">
+    <div className="mt-32 py-10 px-20 h-72 rounded-xl border-2 border-indigo-700 flex gap-24 items-center justify-center">
       <div className="relative h-full w-1/4">
         <Image
           src="/person.jpeg"

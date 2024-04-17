@@ -3,7 +3,7 @@ import NavLinks from "./NavLinks";
 
 export default function Navbar() {
   return (
-    <nav className="content-container flex flex-col mdlg:flex-row justify-between gap-8  items-center">
+    <nav className="content-container flex flex-col mdlg:flex-row justify-between gap-8  text-gray-300 items-center">
       <Link
         href="/"
         className="uppercase cursor-pointer text-lg flex flex-col gap-1 relative"

@@ -5,14 +5,14 @@ import { motion, useInView } from "framer-motion";
 import { MutableRefObject, useRef } from "react";
 export default function Experiences() {
   const ref = useRef() as MutableRefObject<HTMLUListElement>;
-  const inView = useInView(ref, { once: true });
+  const inView = useInView(ref, { once: true, amount: "all" });
   const projects = useIntervalCount(50, 10, inView, 300);
   const years = useIntervalCount(6, 10, inView, 300);
   const courses = useIntervalCount(5, 10, inView, 300);
   return (
     <motion.ul
       ref={ref}
-      initial={{ opacity: 0 }}
+      initial={{ opacity: 0, transform: "translateY(100%)" }}
       animate={{
         opacity: inView ? 1 : 0,
         transform: inView ? "none" : "translateY(100%)",
@@ -25,29 +25,35 @@ export default function Experiences() {
           <span className="text-sm text-gray-500 -mt-4 mb-2">
             Web App of the year
           </span>
-          <span className="text-4xl text-viol font-semibold">
+          <span className="text-4xl text-viol font-semibold text-gray-300">
             1<sup>st</sup>
           </span>
-          <span className="text-gray-400">place</span>
+          <span className="">place</span>
         </div>
       </li>
 
       <li className="flex items-center justify-center">
         <div className="rounded-full p-5 w-56 h-56 flex flex-col justify-center items-center text-2xl border-violet-700 border-2">
-          <span className="text-4xl  font-semibold">{projects}+</span>
-          <span className="text-gray-400">projects</span>
+          <span className="text-gray-300 text-4xl  font-semibold">
+            {projects}+
+          </span>
+          <span className="">projects</span>
         </div>
       </li>
       <li className="flex items-center justify-center">
         <div className="rounded-full p-5 w-56 h-56 flex flex-col justify-center items-center text-2xl border-indigo-600 border-2">
-          <span className="text-3xl  font-semibold">{years}+ years</span>
-          <span className="text-gray-400">experience</span>
+          <span className="text-gray-300 text-3xl  font-semibold">
+            {years}+ years
+          </span>
+          <span className="">experience</span>
         </div>
       </li>
       <li className="flex items-center justify-center">
         <div className="rounded-full p-5 w-56 h-56 flex flex-col justify-center items-center text-2xl border-purple-700 border-2">
-          <span className="text-4xl  font-semibold">{courses}+ free</span>
-          <span className="text-gray-400">courses</span>
+          <span className="text-gray-300 text-4xl  font-semibold">
+            {courses}+ free
+          </span>
+          <span className="">courses</span>
         </div>
       </li>
     </motion.ul>
