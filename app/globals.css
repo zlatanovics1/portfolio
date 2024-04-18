@@ -14,10 +14,10 @@ html::-webkit-scrollbar {
 
 @layer components {
   .content-container {
-    @apply max-w-screen-xl mx-auto px-12 xl:px-2;
+    @apply max-w-screen-2xl mx-auto px-12 xl:px-2;
   }
   .default-gradient {
-    @apply bg-gradient-to-r from-indigo-700 via-violet-600 to-fuchsia-700;
+    @apply bg-gradient-to-r from-indigo-700 via-violet-600 to-violet-700;
   }
 }
 

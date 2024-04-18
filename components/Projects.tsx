@@ -6,7 +6,7 @@ import SectionSlider from "./SectionSlider";
 export default function Projects() {
   return (
     <Section>
-      <SectionSlider title="Browse through my projects" />
+      <SectionSlider title="Browse through my projects" heading />
       <ul className="flex flex-col gap-48 overflow-x-hidden">
         {projects.map((project, i) => (
           <ProjectItem
@@ -16,7 +16,6 @@ export default function Projects() {
           />
         ))}
       </ul>
-      <div className="w-full h-96" />
     </Section>
   );
 }

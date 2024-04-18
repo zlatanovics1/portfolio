@@ -1,3 +1,4 @@
+import About from "@/components/About";
 import Header from "@/components/Header";
 import Offerings from "@/components/Offerings";
 import Projects from "@/components/Projects";
@@ -9,6 +10,7 @@ export default function Home() {
       <Header />
       <SocialProof />
       {/* <Offerings /> */}
+      <About />
       <Projects />
     </>
   );

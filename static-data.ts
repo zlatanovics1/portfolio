@@ -11,7 +11,7 @@ export const projects: ProjectItemProps[] = [
   {
     title: "The Wild Oasis",
     description:
-      "Booking service Saas app. Includes data filtering, authentication, user creation, analytics, graphs and more!",
+      "Booking service Saas app. Includes data filtering, authentication, user creation, analytics, graphs, dark mode and more!",
     mainImage: "/wildoasis1.webp",
     slideImage: "/wildoasis2.png",
   },

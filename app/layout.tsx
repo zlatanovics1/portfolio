@@ -1,11 +1,11 @@
 import type { Metadata } from "next";
-import { Inter, Montserrat, Poppins } from "next/font/google";
+import { Inter, Lobster, Montserrat, Poppins } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/Navbar";
 
 const inter = Poppins({
   subsets: ["latin"],
-  weight: ["300", "400", "500", "600", "700", "800"],
+  weight: ["300", "500", "600", "700", "800"],
 });
 
 export const metadata: Metadata = {
@@ -25,7 +25,7 @@ export default function RootLayout({
       >
         <Navbar />
         {children}
-        <div className="fixed inset-0 bg-gradient-to-t from-black/40 pointer-events-none to-transparent"></div>
+        <div className="fixed inset-0 bg-gradient-to-t from-black/20 pointer-events-none to-transparent"></div>
       </body>
     </html>
   );

@@ -3,7 +3,15 @@
 import { useInView } from "framer-motion";
 import { MutableRefObject, useEffect, useRef, useState } from "react";
 
-export default function SectionSlider({ title }: { title: string }) {
+export default function SectionSlider({
+  title,
+  color,
+  heading,
+}: {
+  title: string;
+  color?: string;
+  heading?: boolean;
+}) {
   const ref = useRef() as MutableRefObject<HTMLDivElement>;
   const isInView = useInView(ref, {
     once: true,
@@ -27,10 +35,16 @@ export default function SectionSlider({ title }: { title: string }) {
     [isInView]
   );
   return (
-    <div ref={ref} className={`text-gray-300 text-center  mb-32  `}>
-      <h2 className="font-semibold capitalize text-4xl">
-        <span>{title.slice(0, highlighted)}</span>
-      </h2>
+    <div ref={ref} className={`${color || "text-gray-300"} mb-20  `}>
+      {heading ? (
+        <h2 className="font-[500] capitalize text-3xl">
+          #<span>{title.slice(0, highlighted)}</span>
+        </h2>
+      ) : (
+        <p className="font-[500] capitalize text-3xl">
+          <span>{title.slice(0, highlighted)}</span>
+        </p>
+      )}
     </div>
   );
 }
