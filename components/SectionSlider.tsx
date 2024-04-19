@@ -35,10 +35,10 @@ export default function SectionSlider({
     [isInView]
   );
   return (
-    <div ref={ref} className={`${color || "text-gray-300"} mb-20  `}>
+    <div ref={ref} className={`${color || "text-gray-500"} mb-20  `}>
       {heading ? (
         <h2 className="font-[500] capitalize text-3xl">
-          #<span>{title.slice(0, highlighted)}</span>
+          <span>{title.slice(0, highlighted)}</span>
         </h2>
       ) : (
         <p className="font-[500] capitalize text-3xl">
