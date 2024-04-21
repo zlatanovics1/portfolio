@@ -12,6 +12,11 @@ html::-webkit-scrollbar {
   }
 }
 
+@media (max-width: 24em) {
+  html {
+    font-size: 56.25%;
+  }
+}
 @layer components {
   .content-container {
     @apply max-w-screen-2xl mx-auto px-12 xl:px-2;

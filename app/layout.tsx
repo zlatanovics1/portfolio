@@ -25,7 +25,7 @@ export default function RootLayout({
       >
         <Navbar />
         {children}
-        <div className="fixed inset-0 bg-gradient-to-t from-black/20 pointer-events-none to-transparent"></div>
+        <div className="fixed inset-0 bg-gradient-to-t from-black/40 pointer-events-none to-transparent"></div>
       </body>
     </html>
   );

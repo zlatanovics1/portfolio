@@ -16,7 +16,7 @@ export default function Header() {
             src="/blobfinalreact.webp"
             fill
             priority
-            className="object-contain"
+            className="object-contain rounded-full"
             alt="Blob"
           />
         </div>

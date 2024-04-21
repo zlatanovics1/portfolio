@@ -2,6 +2,8 @@ import Image from "next/image";
 import Section from "./Section";
 import SectionSlider from "./SectionSlider";
 import AboutMeSteps from "./AboutMeSteps";
+import AboutHeading from "./AboutHeading";
+import AboutImages from "./AboutImages";
 
 export default function About() {
   return (
@@ -10,21 +12,9 @@ export default function About() {
 
       <div className="flex max-xl:flex-col  items-center max-xl:items-start justify-between max-xl:gap-32">
         <div className="text-lg flex flex-col gap-16  basis-1/2 max-xl:w-4/5 max-sm:w-full">
-          <h3 className="text-5xl font-semibold text-gray-300 max-mdlg:text-centr">
-            Where
-            <br className="mdlg:hidden sm:block" />
-            <span className="inline-block px-7 rounded-tl-md rounded-br-md mx-4 my-4 py-2 default-gradient text-white -skew-x-12 ">
-              passion
-            </span>{" "}
-            <br className="mdlg:hidden sm:block" />
-            meets <br className="hidden mdlg:block" /> powerful{" "}
-            <br className="mdlg:hidden sm:block" />
-            <span className="inline-block px-7 rounded-tl-md rounded-br-md mx-4 my-4 py-2 default-gradient text-white -skew-x-12 ">
-              collaboration
-            </span>
-          </h3>
+          <AboutHeading />
           <AboutMeSteps />
-          <div className="flex flex-wrap gap-5">
+          <div className="flex flex-wrap gap-5 items-center">
             <div className="flex items-center">
               <div className="rounded-full relative border-[2px] border-violet-700  h-14 w-14 overflow-hidden">
                 <Image
@@ -82,57 +72,7 @@ export default function About() {
             </p>
           </div>
         </div>
-        <div className="basis-2/5 w-full grid grid-cols-2 gap-4">
-          <div className="overflow-hidden rounded-xl">
-            <div className="relative h-72 hover:scale-105 transition-all duration-300 cursor-pointer">
-              <Image
-                alt=""
-                src="/course.jpg"
-                fill
-                className="object-cover grayscale"
-                quality={100}
-              />
-              <div className="absolute inset-0 bg-gradient-to-t from-violet-900/40 to-violet-800/40 " />
-            </div>
-          </div>
-
-          <div className="overflow-hidden rounded-xl">
-            <div className="relative h-72 hover:scale-105 transition-all duration-300 cursor-pointer">
-              <Image
-                alt=""
-                src="/music.jpg"
-                fill
-                className="object-cover"
-                quality={100}
-              />
-            </div>
-          </div>
-
-          <div className="overflow-hidden rounded-xl">
-            <div className="relative h-72 hover:scale-105 transition-all duration-300 cursor-pointer">
-              <Image
-                alt=""
-                src="/laptop.jpg"
-                fill
-                className="object-cover"
-                quality={100}
-              />
-            </div>
-          </div>
-
-          <div className="overflow-hidden rounded-xl">
-            <div className="relative h-72 hover:scale-105 transition-all duration-300 cursor-pointer">
-              <Image
-                alt=""
-                src="/gym.jpg"
-                fill
-                className="object-cover grayscale"
-                quality={100}
-              />
-              <div className="absolute inset-0 bg-gradient-to-t from-violet-900/40 to-violet-800/40 " />
-            </div>
-          </div>
-        </div>
+        <AboutImages />
       </div>
     </Section>
   );
