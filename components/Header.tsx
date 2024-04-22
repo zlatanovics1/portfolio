@@ -11,7 +11,7 @@ export default function Header() {
           </h1>
           <Typer />
         </div>
-        <div className="relative w-4/5 sm:w-full h-[55dvh] sm:h-[70dvh] xl:translate-x-20">
+        <div className="relative w-4/5 sm:w-full h-[55vh] sm:h-[70dvh] xl:translate-x-20">
           <Image
             src="/blobfinalreact.webp"
             fill
