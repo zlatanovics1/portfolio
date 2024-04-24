@@ -3,7 +3,11 @@
 import { motion } from "framer-motion";
 import { useState } from "react";
 
-const links = ["About me", "Projects", "Skillset"];
+const links = [
+  { label: "About me", href: "#about" },
+  { label: "Projects", href: "#projects" },
+  { label: "Why me", href: "#whyWorkWithMe" },
+];
 
 export default function NavLinks() {
   const [hoveredLinkIndex, setHoveredIndex] = useState(-1);
@@ -17,18 +21,20 @@ export default function NavLinks() {
         <li
           onMouseEnter={() => setHoveredIndex(index)}
           className="cursor-pointer flex-grow"
-          key={link}
+          key={link.label}
         >
-          {link}
+          <a href={link.href}>{link.label}</a>
         </li>
       ))}
       {hoveredLinkIndex > -1 && (
         <motion.div
-          initial={{ left: `${hoveredLinkIndex * 7.5 - 1}rem`, opacity: 0 }}
+          initial={{ left: `${hoveredLinkIndex * 7.5 - 0.5}rem`, opacity: 0 }}
           animate={{
             opacity: 1,
             left: `${
-              hoveredLinkIndex > -1 ? hoveredLinkIndex * 7.5 - 1 : -1
+              hoveredLinkIndex > -1
+                ? hoveredLinkIndex * 7.5 - (hoveredLinkIndex === 2 ? 0.5 : 1)
+                : -1
             }rem`,
           }}
           className={`w-28

@@ -28,3 +28,15 @@ export const projects: ProjectItemProps[] = [
     slideImage: "/devvis2.png",
   },
 ];
+export const BenefitsHeadings = [
+  "HIgh performance is all you need",
+  "Make it drive your budget",
+  "Communication as a key",
+];
+
+export const BenefitsDescriptions = [
+  "lorem ipsum sit dolor amet lorem lorem apsm sig djao emaji fko eiijf skos dksoe ri",
+  "  Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga reiciendis, excepturi ex ad voluptas dolores eum vero omnis? Voluptatum, Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga reiciendis, excepturi ex ad voluptas dolores eum vero omnis? Voluptatum",
+
+  "lorem ipsum sit dolor amet lorem lorem apsm sig djao emaji fko eiijf skos dksoe ri",
+];

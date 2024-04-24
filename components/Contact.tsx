@@ -1,11 +1,11 @@
-import { BsLinkedin } from "react-icons/bs";
 import Section from "./Section";
 import EmailMe from "./EmailMe";
 import ContactForm from "./ContactForm";
+import LinkedIn from "./LinkedIn";
 
 export default function Contact() {
   return (
-    <Section>
+    <Section id="contact">
       <div className="grid relative grid-cols-[2fr,3fr] max-xl:grid-cols-1  border-2 border-violet-700 rounded-xl lg:w-4/5 m-auto">
         <div className=" py-10 px-5 border-violet-600 flex flex-col gap-20">
           <h3 className="text-3xl font-semibold leading-normal text-gray-300">
@@ -18,14 +18,7 @@ export default function Contact() {
             <br /> together!
           </h3>
           <div className="mt-auto space-y-3">
-            <a
-              href="https://www.linkedin.com/in/strahinja-zlatanovic-91150729b/"
-              target="_blank"
-              className="flex items-center  gap-2 cursor-pointer hover:text-violet-700 transition-colors duration-150"
-            >
-              <BsLinkedin className="w-6 h-6 " />
-              <p>Strahinja Zlatanovic</p>
-            </a>
+            <LinkedIn />
             <EmailMe />
           </div>
         </div>

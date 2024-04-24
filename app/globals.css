@@ -6,6 +6,10 @@ html::-webkit-scrollbar {
   display: none;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 @media (max-width: 36em) {
   html {
     font-size: 62.5%;
@@ -19,13 +23,17 @@ html::-webkit-scrollbar {
 }
 @layer components {
   .content-container {
-    @apply max-w-screen-2xl mx-auto px-12 xl:px-2;
+    @apply max-w-screen-xl mx-auto px-12 xl:px-2;
   }
   .default-gradient {
     @apply bg-gradient-to-r from-indigo-700 via-violet-600 to-violet-700;
   }
 }
-
+.neon {
+  color: #fff;
+  text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 20px #fff, 0 0 40px #6d28d9,
+    0 0 80px #6d28d9, 0 0 90px #6d28d9, 0 0 100px #6d28d9, 0 0 150px #6d28d9;
+}
 @layer utilities {
   .project-image-container::before {
     /* background: conic-gradient(
@@ -34,13 +42,16 @@ html::-webkit-scrollbar {
       transparent
     ); */
     animation: spin 3s linear infinite;
+    box-shadow: inset 0 0 50px #fff, /* inner white */ inset 20px 0 80px #7e22ce,
+      /* inner left magenta short */ inset -20px 0 80px #6d28d9,
+      /* inner right cyan short */ inset 20px 0 300px #7e22ce,
+      /* inner left magenta broad */ inset -20px 0 300px #6d28d9,
+      /* inner right cyan broad */ 0 0 50px #fff,
+      /* outer white */ -10px 0 80px #7e22ce,
+      /* outer left magenta */ 10px 0 80px #6d28d9;
 
-    @apply bg-gradient-to-r from-indigo-700 via-indigo-600 to-violet-700 absolute left-[-40%]   top-[10%] h-[80%] w-[180%] content-[''];
+    @apply absolute left-[-40%]   top-[10%] h-[80%] w-[180%] content-[''];
   }
-}
-
-.animate-spinner {
-  animation: spin 4s linear infinite;
 }
 
 @keyframes spin {

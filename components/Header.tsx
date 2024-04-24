@@ -1,12 +1,12 @@
 import Image from "next/image";
-import Typer from "./Typer";
+import Typer from "./HeadingTyper";
 
 export default function Header() {
   return (
-    <header className="content-container mt-40 xl:mt-24">
+    <header id="header" className="content-container mt-40 xl:mt-24">
       <div className="flex flex-col items-center max-xl:gap-20 justify-center xl:flex-row">
         <div className="w-full max-xl:text-center">
-          <h1 className="font-bold text-7xl mb-8 text-gray-300">
+          <h1 className="font-bold text-7xl mb-8 text-gray-200">
             Hi, I&apos;m <span className="">Strahinja</span>
           </h1>
           <Typer />

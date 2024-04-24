@@ -5,7 +5,7 @@ import Testiomonials from "./Testiomonials";
 
 export default function SocialProof() {
   return (
-    <Section>
+    <Section id="socialProof">
       {/* <SectionSlider title="Hard work speaks for itself" /> */}
       <Experiences />
       {/* <Testiomonials /> */}

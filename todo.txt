@@ -1,3 +1,4 @@
-On tab focus change styling
+On tab focus change styling (in whole page, contact as well)
 EXplain the 5+ free courses,
 Change projects heading,
+fix line width in work with me steps

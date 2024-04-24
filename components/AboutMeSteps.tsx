@@ -8,7 +8,7 @@ export default function AboutMeSteps() {
   const [active, setActive] = useState(0);
 
   return (
-    <div className="text-xl relative h-60">
+    <div className="text-xl relative h-60 xl:mr-4 max-xl:ml-4">
       <div className="absolute top-0 bottom-0 left-0 h-full w-[3px] rounded-xl bg-gray-800" />
       <motion.div
         animate={{ height: `calc(${active * 50}% - ${0.5 * active}rem)` }}

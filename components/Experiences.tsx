@@ -7,7 +7,7 @@ export default function Experiences() {
   const ref = useRef() as MutableRefObject<HTMLUListElement>;
   const inView = useInView(ref, { once: true, amount: 0.5 });
   const projects = useIntervalCount(50, 10, inView, 300);
-  const years = useIntervalCount(6, 10, inView, 300);
+  const years = useIntervalCount(3, 10, inView, 300);
   const courses = useIntervalCount(5, 10, inView, 300);
   return (
     <motion.ul

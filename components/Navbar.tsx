@@ -1,6 +1,6 @@
 import Link from "next/link";
 import NavLinks from "./NavLinks";
-import { BiMenu } from "react-icons/bi";
+import DropDownMenu from "./DropDownMenu";
 
 export default function Navbar() {
   return (
@@ -15,12 +15,15 @@ export default function Navbar() {
       <div className="mdlg:flex gap-14 hidden">
         <NavLinks />
 
-        <button className="rounded-xl border-2 transition-all duration-300 border-violet-800 hover:px-8 hover:bg-violet-800 hover:text-inherit text-violet-800 px-6 py-2">
+        <a
+          href="#contact"
+          className="rounded-xl border-2 transition-all duration-300 border-violet-800 hover:px-8 hover:bg-violet-800 hover:text-inherit text-violet-800 px-6 py-2"
+        >
           Let&apos;s talk
-        </button>
+        </a>
       </div>
       <div className="mdlg:hidden absolute top-0 right-12">
-        <BiMenu className=" w-8 h-8" />
+        <DropDownMenu />
       </div>
     </nav>
   );

@@ -1,14 +1,15 @@
 "use client";
-
+import { TyperProps } from "@/types/components";
 import { ReactTyped } from "react-typed";
 
-export default function Typer() {
+export default function Typer({ className, strings, speed = 0 }: TyperProps) {
   return (
     <ReactTyped
-      typeSpeed={50}
-      strings={["Web Developer", "Full-Stack Dev", "Webflow developer"]}
-      loop
-      className="text-4xl sm:text-6xl  mt-10 font-semibold text-transparent bg-clip-text default-gradient"
+      showCursor={false}
+      className={className}
+      strings={strings}
+      startWhenVisible
+      typeSpeed={speed}
     />
   );
 }
