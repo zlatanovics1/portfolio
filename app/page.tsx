@@ -11,7 +11,6 @@ export default function Home() {
       <Header />
       <SocialProof />
       <WhyWorkWithMe />
-      {/* <Offerings /> */}
       <About />
       <Projects />
       <Contact />

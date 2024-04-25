@@ -1,6 +1,5 @@
 "use client";
 import { useWorkWithMe } from "@/context/WorkWithMeContextProvider";
-import { motion } from "framer-motion";
 import Typer from "./Typer";
 import {
   BenefitsHeadings as headings,
