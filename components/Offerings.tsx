@@ -1,10 +1,8 @@
-import Section from "./Section";
-import SectionSlider from "./SectionSlider";
+// import Section from "./Section";
 
-export default function Offerings() {
-  return (
-    <Section>
-      <SectionSlider title="Why work with me" />
-    </Section>
-  );
-}
+// export default function Offerings() {
+//   return (
+//     <Section>
+//     </Section>
+//   );
+// }
