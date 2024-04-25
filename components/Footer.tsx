@@ -13,13 +13,13 @@ export default function Footer() {
           <LinkedIn />
         </div>
       </div>
-      <div className="flex flex-col justify-self-center gap-8 [&_a]:cursor-pointer [&_a:hover]:text-violet-700 [&_a]:transition-colors [&_a]:duration-300">
-        <a>Why work with me?</a>
+      <div className="flex flex-col sm:justify-self-center gap-8 [&_a]:cursor-pointer [&_a:hover]:text-violet-700 [&_a]:transition-colors [&_a]:duration-300">
+        <a href="#whyWorkWithMe">Why work with me?</a>
         <a href="#about">About me</a>
         <a href="#projects">Projects</a>
         <a href="#contact">Contact me</a>
       </div>
-      <div className="flex flex-col justify-self-end gap-8 [&_a]:cursor-pointer [&_a:hover]:text-violet-700 [&_a]:transition-colors [&_a]:duration-300">
+      <div className="flex flex-col sm:justify-self-end gap-8 [&_a]:cursor-pointer [&_a:hover]:text-violet-700 [&_a]:transition-colors [&_a]:duration-300">
         <a
           href="https://www.upwork.com/freelancers/~01981e92235d3a6631"
           target="_blank"

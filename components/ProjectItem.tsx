@@ -42,7 +42,7 @@ export default function ProjectItem({
         </p>
       </motion.div>
       <motion.a
-        href={link}
+        href={link || "/"}
         target="_blank"
         initial={{ opacity: 0, scale: 0.7 }}
         transition={{ duration: 0.5 }}

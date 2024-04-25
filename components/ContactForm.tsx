@@ -24,7 +24,7 @@ export default function ContactForm() {
             className=" border-b-[1px] px-2 pb-2 pt-6 peer w-4/5 border-b-gray-800 bg-transparent  outline-none focus:border-b-violet-200 transition-colors duration-300"
           />
           <label
-            htmlFor="name"
+            htmlFor="email"
             className="absolute top-0 left-0 peer-focus:text-violet-200 transition-colors duration-300"
           >
             Email

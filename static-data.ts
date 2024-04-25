@@ -7,6 +7,7 @@ export const projects: ProjectItemProps[] = [
       "Social media and Data Structures and Algorithms visualization app. Integrated code editor, authorization and authentication, user sign up, real-time messages, rpcs and db triggers",
     mainImage: "/devvis1.png",
     slideImage: "/devvis2.png",
+    link: "visualizedev.vercel.app",
   },
   {
     title: "The Wild Oasis",

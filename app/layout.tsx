@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import { Poppins } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/Navbar";
@@ -14,6 +14,10 @@ export const metadata: Metadata = {
   description: "Pixel Perfect Web Developer",
 };
 
+export const viewport: Viewport = {
+  themeColor: "#030712",
+};
+
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -27,7 +31,7 @@ export default function RootLayout({
         <Navbar />
         {children}
         <Footer />
-        <div className="fixed inset-0 bg-gradient-to-t from-black/40 pointer-events-none to-transparent"></div>
+        {/* <div className="fixed inset-0 bg-gradient-to-t from-black/40 pointer-events-none to-transparent"></div> */}
       </body>
     </html>
   );

@@ -19,7 +19,7 @@ export default function AboutMeSteps() {
       />
       <ul>
         {Array.from({ length: 3 }, (_, ind: number) => (
-          <motion.div
+          <motion.li
             layout
             transformTemplate={(_, generated) =>
               `translateX(-35%) ${generated}`
