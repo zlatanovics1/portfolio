@@ -15,7 +15,7 @@ export default function AboutImages() {
       }}
       transition={{ duration: 0.5 }}
       ref={ref}
-      className="basis-2/5 w-full grid grid-cols-2 gap-4"
+      className="basis-[45%] w-full grid grid-cols-2 gap-4"
     >
       <motion.div
         animate={{ x: inView ? 0 : -200 }}

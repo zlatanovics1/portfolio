@@ -28,13 +28,14 @@ export default function OfferImages() {
       {images.map((image, i) => (
         <motion.div
           key={image.alt}
+          initial={{ opacity: 0 }}
           animate={{ opacity: activePoint === i + 1 ? 100 : 0 }}
           className="absolute inset-0"
         >
           <Image
             src={image.src}
             alt={image.alt}
-            className="h-full w-4/5 mx-auto xl:ml-auto"
+            className="h-full w-4/5 max-xl:mx-auto xl:ml-auto"
             sizes="(min-width:1280px) 50vw, 100vw"
           />
         </motion.div>

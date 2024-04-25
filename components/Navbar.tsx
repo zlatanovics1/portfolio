@@ -4,7 +4,7 @@ import DropDownMenu from "./DropDownMenu";
 
 export default function Navbar() {
   return (
-    <nav className="content-container relative flex flex-col mdlg:flex-row justify-between gap-8  text-gray-300 items-start">
+    <nav className="max-w-[1440px] px-10 mx-auto relative flex flex-col mdlg:flex-row justify-between gap-8  text-gray-300 items-start">
       <Link
         href="/"
         className="uppercase cursor-pointer text-lg flex flex-col gap-1 relative"

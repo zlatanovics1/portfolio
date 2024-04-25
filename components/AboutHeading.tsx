@@ -7,7 +7,7 @@ export default function AboutHeading({ words }: { words: string[] }) {
   return (
     <h3
       ref={h3Ref}
-      className="text-5xl font-semibold text-gray-300  overflow-hidden"
+      className="text-4xl font-semibold text-gray-300  overflow-hidden"
     >
       {words[0]}
       <br className="mdlg:hidden sm:block" />

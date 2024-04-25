@@ -18,7 +18,7 @@ export default function WhyWorkWithMe() {
         <div className="flex gap-20 items-center max-xl:flex-col">
           {/* left side */}
           <div className="basis-1/2 flex flex-col gap-16">
-            <h3 className="text-5xl text-gray-300 leading-normal font-semibold">
+            <h3 className="text-4xl text-gray-300 leading-normal font-semibold">
               Delivering{" "}
               <span className="default-gradient bg-clip-text text-transparent">
                 Hard Performing

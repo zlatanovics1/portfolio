@@ -1,5 +1,6 @@
 "use client";
 import { useWorkWithMe } from "@/context/WorkWithMeContextProvider";
+import { motion } from "framer-motion";
 import Typer from "./Typer";
 import {
   BenefitsHeadings as headings,
@@ -12,7 +13,7 @@ import { SiSpeedtest } from "react-icons/si";
 export default function WhatIOfferSteps() {
   const { activePoint, setActivePoint } = useWorkWithMe();
   return (
-    <div className="flex gap-12">
+    <div className="flex gap-12 ">
       <div className="w-2 rounded-md h-64 bg-gray-800 relative">
         <SiSpeedtest
           className={`absolute cursor-pointer w-8 h-8 top-3 text-gray-100 -translate-x-[40%] ${
@@ -39,10 +40,11 @@ export default function WhatIOfferSteps() {
           onClick={() => setActivePoint(3)}
         />
       </div>
-      <div className="pt-3 space-y-10">
-        <h4 className="text-2xl text-gray-300 font-[500]">
+      <div className="pt-3 space-y-10 grow">
+        <h4 className="text-2xl text-gray-300 font-semibold">
           <Typer strings={[headings[activePoint - 1] + "."]} />
         </h4>
+
         <p className="text-lg">{descriptions[activePoint - 1]}</p>
       </div>
     </div>

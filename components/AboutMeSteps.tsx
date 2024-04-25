@@ -1,14 +1,16 @@
 "use client";
 
 import { useState } from "react";
-import { motion } from "framer-motion";
+import { AnimatePresence, motion } from "framer-motion";
+import { aboutMe } from "@/static-data";
 
 const dist = ["top-2", "top-1/2 -translate-y-1/2", "bottom-2"];
+
 export default function AboutMeSteps() {
   const [active, setActive] = useState(0);
 
   return (
-    <div className="text-xl relative h-60 xl:mr-4 max-xl:ml-4">
+    <div className="text-xl relative h-60 ml-4">
       <div className="absolute top-0 bottom-0 left-0 h-full w-[3px] rounded-xl bg-gray-800" />
       <motion.div
         animate={{ height: `calc(${active * 50}% - ${0.5 * active}rem)` }}
@@ -33,6 +35,30 @@ export default function AboutMeSteps() {
           />
         ))}
       </ul>
+
+      <div className="ml-8 mt-4 text-lg relative">
+        {aboutMe.map((about, i) => (
+          <motion.p
+            key={about}
+            initial={{ opacity: 0 }}
+            animate={{
+              opacity: active === i ? 1 : 0,
+            }}
+            transition={{ type: "tween", duration: 0.5 }}
+            className="absolute top-0 left-0"
+          >
+            {about}
+          </motion.p>
+        ))}
+      </div>
+      {active < aboutMe.length - 1 && (
+        <button
+          onClick={() => setActive((active) => active + 1)}
+          className="absolute outline-none focus:ring-1 focus:ring-violet-800 bottom-0 right-0 border-2 text-violet-700 float-right border-violet-700 px-5 py-1 rounded-tl-xl rounded-br-xl mt-8 hover:border-violet-800 hover:text-violet-800 transition-all duration-300"
+        >
+          Next &rarr;
+        </button>
+      )}
     </div>
   );
 }
