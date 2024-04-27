@@ -1,14 +1,39 @@
+"use client";
+
+import { type ContactForm, contactFormSchema } from "@/types/validation";
+import { contactMeSubmit } from "@/app/actions/contactForm";
+import { useState } from "react";
+import { motion } from "framer-motion";
+
+import toast from "react-hot-toast";
 import { BiSend } from "react-icons/bi";
+import { RiLoader4Fill } from "react-icons/ri";
 
 export default function ContactForm() {
+  async function handleSubmit(data: FormData) {
+    const formData: ContactForm = {
+      name: (data.get("name") as string) || "",
+      email: (data.get("email") as string) || "",
+      message: (data.get("message") as string) || "",
+    };
+    const result = contactFormSchema.safeParse(formData);
+    if (!result.success) {
+      toast.error("Invalid input!");
+      return;
+    }
+
+    const res = await contactMeSubmit(formData);
+    if (!res.ok) return toast.error("Failed to send message!");
+    return toast.success("Message sent!");
+  }
   return (
-    <form className="px-5 py-10 space-y-10 text-lg">
+    <form className="px-5 py-10 space-y-10 text-lg" action={handleSubmit}>
       <div className="flex gap-8 flex-col md:flex-row">
         <div className="relative grow">
           <input
             name="name"
             id="name"
-            className=" border-b-[1px] px-2 pb-2 pt-6 peer w-4/5 border-b-gray-800 bg-transparent  outline-none focus:border-b-violet-200 transition-colors duration-300"
+            className=" border-b-[1px] px-2 pb-2 pt-8 peer w-4/5 border-b-gray-800 bg-transparent  outline-none focus:border-b-violet-200 transition-colors duration-300"
           />
           <label
             htmlFor="name"
@@ -21,7 +46,7 @@ export default function ContactForm() {
           <input
             name="email"
             id="email"
-            className=" border-b-[1px] px-2 pb-2 pt-6 peer w-4/5 border-b-gray-800 bg-transparent  outline-none focus:border-b-violet-200 transition-colors duration-300"
+            className=" border-b-[1px] px-2 pb-2 pt-8 peer w-4/5 border-b-gray-800 bg-transparent  outline-none focus:border-b-violet-200 transition-colors duration-300"
           />
           <label
             htmlFor="email"
@@ -46,13 +71,14 @@ export default function ContactForm() {
           Message
         </label>
       </div>
-      <button
+      <motion.button
+        whileTap={{ scale: 0.95 }}
         name="Send a message"
-        className="border-2 float-right flex items-center gap-1 outline-none focus:bg-violet-700 focus:text-violet-200 border-violet-700 text-violet-700 rounded-md px-10 py-2 hover:bg-violet-700 hover:text-violet-200 transition-colors duration-300"
+        className="border-2 float-right flex items-center gap-2 outline-none focus:bg-violet-900 focus:text-violet-200 border-violet-700 text-violet-700 rounded-md px-10 py-2 hover:bg-violet-700 hover:text-violet-200 transition-colors duration-300"
       >
         <span>Send</span>
         <BiSend className="w-5 h-5" />
-      </button>
+      </motion.button>
     </form>
   );
 }

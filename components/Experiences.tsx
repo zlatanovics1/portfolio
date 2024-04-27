@@ -5,7 +5,7 @@ import { motion, useInView } from "framer-motion";
 import { MutableRefObject, useRef } from "react";
 export default function Experiences() {
   const ref = useRef() as MutableRefObject<HTMLUListElement>;
-  const inView = useInView(ref, { once: true, amount: 0.5 });
+  const inView = useInView(ref, { once: true, amount: 0.3 });
   const projects = useIntervalCount(50, 10, inView, 300);
 
   return (
@@ -17,7 +17,7 @@ export default function Experiences() {
         transform: inView ? "none" : "translateY(100%)",
       }}
       transition={{ type: "tween", duration: 0.5 }}
-      className="grid grid-cols-2 lg:grid-cols-4 gap-20 "
+      className="grid max-[330px]:grid-cols-1 grid-cols-2 lg:grid-cols-4 gap-20 "
     >
       <li className="flex items-center justify-center">
         <div className="rounded-full p-5 w-44 h-44 sm:w-56 sm:h-56 flex flex-col justify-center items-center text-2xl border-indigo-700 border-2">

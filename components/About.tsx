@@ -18,7 +18,7 @@ export default function About() {
             words={["Where", "passion", "meets", "powerful", "collaboration"]}
           />
           <AboutMeSteps />
-          <div className="flex flex-wrap gap-5 items-center">
+          <div className="flex flex-wrap gap-5 items-center mt-8">
             <AboutAttenders />
             <p className="sm:text-xl">
               <span className="text-violet-700">30+</span> satisfied course

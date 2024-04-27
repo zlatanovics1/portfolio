@@ -3,6 +3,11 @@ import { useInView, motion } from "framer-motion";
 import Image from "next/image";
 import { MutableRefObject, useRef } from "react";
 
+import courseImage from "@/public/course.jpg";
+import gymImage from "@/public/gym.jpg";
+import musicImage from "@/public/music.jpg";
+import laptopImage from "@/public/laptop.jpg";
+
 export default function AboutImages() {
   const ref = useRef() as MutableRefObject<HTMLDivElement>;
   const inView = useInView(ref, { amount: 0.5, once: true });
@@ -24,11 +29,10 @@ export default function AboutImages() {
       >
         <div className="relative h-72 hover:scale-105 transition-all duration-300 cursor-pointer">
           <Image
-            alt=""
-            src="/course.jpg"
-            fill
-            className="object-cover grayscale"
-            quality={100}
+            alt="Free course"
+            sizes="(min-width:1280px) 25vw, 50vw"
+            src={courseImage}
+            className="object-cover w-full h-full grayscale"
           />
           <div className="absolute inset-0 bg-gradient-to-t from-violet-900/40 to-violet-800/40 " />
         </div>
@@ -41,11 +45,10 @@ export default function AboutImages() {
       >
         <div className="relative h-72 hover:scale-105 transition-all duration-300 cursor-pointer">
           <Image
-            alt=""
-            src="/music.jpg"
-            fill
-            className="object-cover"
-            quality={100}
+            alt="Music playing"
+            src={musicImage}
+            sizes="(min-width:1280px) 25vw, 50vw"
+            className="object-cover w-full h-full"
           />
         </div>
       </motion.div>
@@ -57,11 +60,10 @@ export default function AboutImages() {
       >
         <div className="relative h-72 hover:scale-105 transition-all duration-300 cursor-pointer">
           <Image
-            alt=""
-            src="/laptop.jpg"
-            fill
-            className="object-cover"
-            quality={100}
+            alt="Work setup"
+            src={laptopImage}
+            sizes="(min-width:1280px) 25vw, 50vw"
+            className="object-cover w-full h-full"
           />
         </div>
       </motion.div>
@@ -73,11 +75,10 @@ export default function AboutImages() {
       >
         <div className="relative h-72 hover:scale-105 transition-all duration-300 cursor-pointer">
           <Image
-            alt=""
-            src="/gym.jpg"
-            fill
-            className="object-cover grayscale"
-            quality={100}
+            alt="Gym"
+            src={gymImage}
+            sizes="(min-width:1280px) 25vw, 50vw"
+            className="object-cover w-full h-full grayscale"
           />
           <div className="absolute inset-0 bg-gradient-to-t from-violet-900/40 to-violet-800/40 " />
         </div>

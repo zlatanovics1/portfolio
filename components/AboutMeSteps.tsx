@@ -48,17 +48,18 @@ export default function AboutMeSteps() {
             className="absolute top-0 left-0"
           >
             {about}
+            {active === i && active < aboutMe.length - 1 && (
+              <motion.button
+                whileTap={{ scale: 0.95 }}
+                onClick={() => setActive((active) => active + 1)}
+                className="outline-none focus:ring-1 focus:ring-violet-800 border-2 text-violet-700 float-right border-violet-700 px-5 py-1 rounded-tl-xl rounded-br-xl mt-8 hover:border-violet-800 hover:text-violet-800 transition-all duration-300"
+              >
+                Next &rarr;
+              </motion.button>
+            )}
           </motion.p>
         ))}
       </div>
-      {active < aboutMe.length - 1 && (
-        <button
-          onClick={() => setActive((active) => active + 1)}
-          className="absolute outline-none focus:ring-1 focus:ring-violet-800 bottom-0 right-0 border-2 text-violet-700 float-right border-violet-700 px-5 py-1 rounded-tl-xl rounded-br-xl mt-8 hover:border-violet-800 hover:text-violet-800 transition-all duration-300"
-        >
-          Next &rarr;
-        </button>
-      )}
     </div>
   );
 }

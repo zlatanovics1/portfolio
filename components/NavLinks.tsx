@@ -1,13 +1,8 @@
 "use client";
 
+import { links } from "@/static-data";
 import { motion } from "framer-motion";
 import { useState } from "react";
-
-const links = [
-  { label: "About me", href: "#about" },
-  { label: "Projects", href: "#projects" },
-  { label: "Why me", href: "#whyWorkWithMe" },
-];
 
 export default function NavLinks() {
   const [hoveredLinkIndex, setHoveredIndex] = useState(-1);

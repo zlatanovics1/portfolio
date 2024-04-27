@@ -55,22 +55,20 @@ export default function ProjectItem({
         }}
         className={`project-image-container hover:before:hidden relative group rounded-2xl cursor-pointer border-2  border-gray-900 bg-gray-900 hover:border-indigo-700 flip overflow-hidden ${
           reverse && "-order-1"
-        } max-lg:-order-1 col-span-4`}
+        } max-lg:-order-1 col-span-4 outline-none focus:ring-1 focus:ring-indigo-700  `}
       >
         <div className="relative rounded-2xl w-[calc(100%-3px)] scale-y-[.99] translate-x-[1.3px]">
           <Image
             src={mainImage}
-            alt="project photo"
-            width={1907}
-            height={1030}
+            alt={`${title} photo`}
             quality={100}
+            sizes="(min-width:1280px) 50vw, 100vw"
             className="rounded-2xl  object-contain transition-all duration-300"
           />
           <Image
             src={slideImage}
-            alt="project photo"
-            width={1907}
-            height={1030}
+            sizes="(min-width:1280px) 50vw, 100vw"
+            alt={`${title} photo`}
             className="rounded-2xl object-contain  absolute inset-0 group-hover:translate-x-0 -translate-x-[110%] transition-all duration-300"
           />
         </div>

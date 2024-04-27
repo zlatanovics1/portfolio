@@ -3,6 +3,7 @@ import { useState } from "react";
 import { motion } from "framer-motion";
 import { BiMenu } from "react-icons/bi";
 import { CgClose } from "react-icons/cg";
+import { links } from "@/static-data";
 
 export default function DropDownMenu() {
   const [open, setOpen] = useState(false);
@@ -11,6 +12,7 @@ export default function DropDownMenu() {
       <BiMenu className=" w-8 h-8" onClick={() => setOpen(true)} />
       {open && (
         <motion.div
+          onClick={() => setOpen(false)}
           initial={{ x: -500 }}
           transition={{ duration: 0.15, type: "tween" }}
           animate={{ x: 0 }}
@@ -24,8 +26,18 @@ export default function DropDownMenu() {
           >
             <CgClose />
           </button>
-          <ul className="flex flex-col items-center justify-center mt-32">
-            <a>lol</a>
+          <ul className="flex flex-col items-center gap-16 text-2xl justify-center mt-32 [&_a:hover]:text-violet-700 [&_a]:transition-colors">
+            {links.map((link) => (
+              <a href={link.href} key={link.href}>
+                {link.label}
+              </a>
+            ))}
+            <a
+              href="#contact"
+              className="rounded-xl border-2 transition-all duration-300 border-violet-800 hover:px-8 hover:bg-violet-800 hover:text-inherit text-violet-800 px-6 py-2"
+            >
+              Let&apos;s talk
+            </a>
           </ul>
         </motion.div>
       )}
