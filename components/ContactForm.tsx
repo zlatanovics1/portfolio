@@ -2,12 +2,10 @@
 
 import { type ContactForm, contactFormSchema } from "@/types/validation";
 import { contactMeSubmit } from "@/app/actions/contactForm";
-import { useState } from "react";
 import { motion } from "framer-motion";
 
 import toast from "react-hot-toast";
 import { BiSend } from "react-icons/bi";
-import { RiLoader4Fill } from "react-icons/ri";
 
 export default function ContactForm() {
   async function handleSubmit(data: FormData) {

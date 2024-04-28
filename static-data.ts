@@ -3,6 +3,10 @@ import devVisMain from "@/public/devvis1.png";
 import devVisSlide from "@/public/devvis2.png";
 import wildOasisMain from "@/public/wildoasis1.webp";
 import wildOasisSlide from "@/public/wildoasis2.png";
+import brainWaveMain from "@/public/brainwave1.png";
+import brainWaveSlide from "@/public/brainwave2.png";
+import appleTitanMain from "@/public/appletitan2.png";
+import appleTitanSlide from "@/public/appletitan1.png";
 
 export const links = [
   { label: "About me", href: "#about" },
@@ -12,6 +16,14 @@ export const links = [
 
 export const projects: ProjectItemProps[] = [
   {
+    title: "Imagine and Generate",
+    description:
+      "Landing page for BrainWave app. Used scroll lock, parallax effects, animations  and most modern UI&UX and responsive design principles (RDP)",
+    mainImage: brainWaveMain,
+    slideImage: brainWaveSlide,
+    link: "https://appbrainwave.vercel.app/",
+  },
+  {
     title: "Develop & Visualize",
     description:
       "Social media and Data Structures and Algorithms visualization app. Integrated code editor, authorization and authentication, user sign up, real-time messages, rpcs and db triggers",
@@ -19,6 +31,7 @@ export const projects: ProjectItemProps[] = [
     slideImage: devVisSlide,
     link: "https://visualizedev.vercel.app/",
   },
+
   {
     title: "The Wild Oasis",
     description:
@@ -26,18 +39,15 @@ export const projects: ProjectItemProps[] = [
     mainImage: wildOasisMain,
     slideImage: wildOasisSlide,
   },
-  // {
-  //   title: "Drive Your Dreams",
-  //   description: "",
-  //   mainImage: "/devvis1.png",
-  //   slideImage: "/devvis2.png",
-  // },
-  // {
-  //   title: "Collab & Learn",
-  //   description: "",
-  //   mainImage: "/devvis1.png",
-  //   slideImage: "/devvis2.png",
-  // },
+
+  {
+    title: "Apple titan showcase",
+    description:
+      "Apple titanium showcase landing page. For custom animations - GSAP.js, and react-three-fiber. Customized with additional scrolling effects and modern UI.",
+    mainImage: appleTitanMain,
+    slideImage: appleTitanSlide,
+    link: "https://appletitan.vercel.app/",
+  },
 ];
 export const BenefitsHeadings = [
   "Seamless browsing experience",
