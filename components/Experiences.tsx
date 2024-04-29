@@ -24,7 +24,7 @@ export default function Experiences() {
           <span className="sm:text-sm text-[7px] text-gray-500 -mt-4 mb-2">
             Web App of the year
           </span>
-          <span className="sm:text-4xl text-3xl text-viol font-semibold text-gray-300">
+          <span className="sm:text-4xl text-3xl text-viol font-semibold text-gray-300 ">
             1<sup>st</sup>
           </span>
           <span className="">place</span>
@@ -33,7 +33,7 @@ export default function Experiences() {
 
       <li className="flex items-center justify-center">
         <div className="rounded-full p-5 w-44 h-44 sm:w-56 sm:h-56 flex flex-col justify-center items-center text-2xl border-violet-700 border-2">
-          <span className="text-gray-300 sm:text-4xl text-3xl  font-semibold">
+          <span className="text-gray-300 sm:text-4xl text-3xl  font-semibold ">
             {projects}+
           </span>
           <span className="">projects</span>

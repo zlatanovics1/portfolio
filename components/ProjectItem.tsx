@@ -4,6 +4,7 @@ import { MutableRefObject, useRef } from "react";
 import { motion, useInView } from "framer-motion";
 import { BiLinkExternal } from "react-icons/bi";
 import { ProjectItemProps } from "@/types/components";
+import toast from "react-hot-toast";
 
 export default function ProjectItem({
   reverse = false,
@@ -43,9 +44,11 @@ export default function ProjectItem({
           Live demo &uarr;
         </p>
       </motion.div>
+
       <motion.a
-        href={link || "/"}
-        target="_blank"
+        href={link || "#projects"}
+        onClick={link ? undefined : () => toast.loading("In production...")}
+        target={link ? "_blank" : "_self"}
         initial={{ opacity: 0, scale: 0.7 }}
         transition={{ duration: 0.5 }}
         animate={{

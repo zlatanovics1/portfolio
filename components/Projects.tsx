@@ -12,7 +12,7 @@ export default function Projects() {
           strings={["Browse through my projects"]}
         />
       </h2>
-      <ul className="flex flex-col gap-72 overflow-x-hidden">
+      <ul className="flex flex-col gap-80 overflow-x-hidden">
         {projects.map((project, i) => (
           <ProjectItem
             key={project.title}

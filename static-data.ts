@@ -26,7 +26,7 @@ export const projects: ProjectItemProps[] = [
   {
     title: "Develop & Visualize",
     description:
-      "Social media and Data Structures and Algorithms visualization app. Integrated code editor, authorization and authentication, user sign up, real-time messages, rpcs and db triggers",
+      "Social media and Data Structures and Algorithms visualization app. Integrated code editor, authorization and authentication, real-time messages, file upload using rpcs, db triggers and more!",
     mainImage: devVisMain,
     slideImage: devVisSlide,
     link: "https://visualizedev.vercel.app/",
@@ -57,7 +57,7 @@ export const BenefitsHeadings = [
 
 export const BenefitsDescriptions = [
   "Low speed and less performant website makes it harder for potential customers to reach you. Even if they do, they become frustrated and bounce back quickly. Only thing you end up with is missed business opportunity.",
-  "According to Amazon study, reducing page load by just 100ms can bring 10%+ sales increase. I make sure to leave you with loyal and satisfied customers, who form their first - and long lasting - impressions of your company reputation just by exploring your website.",
+  "According to Amazon study, reducing page load by just 100ms can bring 10%+ sales increase. I make sure to leave you with loyal and satisfied customers, who form their first - and long lasting - impressions of your company just by exploring your website.",
 
   "I believe in clear, open communication. I strongly listen to what you want, offering best advice along the way to make sure we bring your ideas to life. Whether you need a redesign, refactoring, or any other change, I get back to you very quickly and keep you updated.",
 ];
