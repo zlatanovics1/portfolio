@@ -1,6 +1,5 @@
 "use client";
 import { useWorkWithMe } from "@/context/WorkWithMeContextProvider";
-import Typer from "./Typer";
 import {
   BenefitsHeadings as headings,
   BenefitsDescriptions as descriptions,
@@ -41,7 +40,8 @@ export default function WhatIOfferSteps() {
       </div>
       <div className="pt-3 space-y-10 grow">
         <h4 className="text-2xl text-gray-300 font-semibold">
-          <Typer strings={[headings[activePoint - 1] + "."]} />
+          {/* <Typer strings={[headings[activePoint - 1] + "."]} /> */}
+          {[headings[activePoint - 1]]}
         </h4>
 
         <p className="text-lg">{descriptions[activePoint - 1]}</p>

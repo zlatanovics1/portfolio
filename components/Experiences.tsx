@@ -1,13 +1,13 @@
 "use client";
 
-import { useIntervalCount } from "@/hooks/useIntervalCount";
+// import { useIntervalCount } from "@/hooks/useIntervalCount";
 import { motion, useInView } from "framer-motion";
 import { MutableRefObject, useRef } from "react";
 export default function Experiences() {
   const ref = useRef() as MutableRefObject<HTMLUListElement>;
   const inView = useInView(ref, { once: true, amount: 0.3 });
-  const projects = useIntervalCount(50, 10, inView, 300);
-
+  // const projects = useIntervalCount(50, 10, inView, 300);
+  const projects = 30;
   return (
     <motion.ul
       ref={ref}
@@ -50,7 +50,7 @@ export default function Experiences() {
       <li className="flex items-center justify-center">
         <div className="rounded-full p-5 w-44 h-44 sm:w-56 sm:h-56 flex flex-col justify-center items-center text-2xl border-purple-700 border-2">
           <span className="text-gray-300 sm:text-4xl text-3xl  font-semibold">
-            {5} free
+            {3} free
           </span>
           <span className="">courses</span>
         </div>

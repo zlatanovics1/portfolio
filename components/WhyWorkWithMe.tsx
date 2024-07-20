@@ -1,5 +1,5 @@
-import Typer from "./Typer";
 import Section from "./Section";
+
 import WhatIOfferSteps from "./WhatIOfferSteps";
 
 import OfferImages from "./OfferImages";
@@ -10,10 +10,11 @@ export default function WhyWorkWithMe() {
     <WorkWithMeContextProvider>
       <Section id="whyWorkWithMe">
         <h2 className="mb-16">
-          <Typer
+          {/* <Typer
             strings={["What sets me apart"]}
             className="text-gray-500 text-3xl"
-          />
+          /> */}
+          What sets me apart
         </h2>
         <div className="flex gap-20 items-center max-xl:flex-col">
           {/* left side */}

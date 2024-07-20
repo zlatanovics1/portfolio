@@ -2,7 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-html::-webkit-scrollbar {
+*::-webkit-scrollbar {
   display: none;
 }
 
@@ -31,9 +31,16 @@ html {
 }
 .neon {
   color: #fff;
-  text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 20px #fff, 0 0 40px #6d28d9,
-    0 0 80px #6d28d9, 0 0 90px #6d28d9, 0 0 100px #6d28d9, 0 0 150px #6d28d9;
+  text-shadow: 0 0 3px #fff, 0 0 1px #fff, 0 0 10px #fff, 0 0 20px #6d28d9,
+    0 0 40px #6d28d9, 0 0 90px #6d28d9, 0 0 80px #6d28d9, 0 0 150px #6d28d9;
 }
+
+/* .neon {
+  color: #ddd; 
+  text-shadow: 0 0 2px #fff, 0 0 5px #fff, 0 0 10px #6d28d9, 0 0 20px #6d28d9,
+    0 0 40px #6d28d9;
+} */
+
 @layer utilities {
   .project-image-container::before {
     @apply bg-gradient-to-t from-indigo-700/50 to-violet-700/50 absolute left-[-40%]   top-[10%] h-[80%] w-[180%] content-[''];

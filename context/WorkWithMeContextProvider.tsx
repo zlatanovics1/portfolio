@@ -1,9 +1,14 @@
 "use client";
 
-import { workWithMeContextType } from "@/types/contexts";
 import { createContext, useContext, useState } from "react";
 
-const WorkWithMeContext = createContext<workWithMeContextType | null>(null);
+interface IWorkWithMeContext {
+  activePoint: number;
+  setActivePoint: (point: number) => void;
+}
+
+const WorkWithMeContext = createContext<IWorkWithMeContext | null>(null);
+
 export default function WorkWithMeContextProvider({
   children,
 }: {

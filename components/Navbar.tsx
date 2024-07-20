@@ -17,7 +17,7 @@ export default function Navbar() {
 
         <a
           href="#contact"
-          className="rounded-xl border-2 transition-all duration-300 border-violet-800 hover:px-8 hover:bg-violet-800 hover:text-inherit text-violet-800 px-6 py-2"
+          className="rounded-xl border-2 transition-all duration-300 border-violet-800 hover:scale-x-10 hover:bg-violet-800 hover:text-inherit text-violet-800 px-6 py-2"
         >
           Let&apos;s talk
         </a>
