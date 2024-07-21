@@ -6,6 +6,7 @@ import { MutableRefObject, useRef } from "react";
 export default function Experiences() {
   const ref = useRef() as MutableRefObject<HTMLUListElement>;
   const inView = useInView(ref, { once: true, amount: 0.3 });
+  // useStickyNav();
   // const projects = useIntervalCount(50, 10, inView, 300);
   const projects = 30;
   return (

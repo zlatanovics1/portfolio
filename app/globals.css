@@ -46,6 +46,9 @@ html {
     @apply bg-gradient-to-t from-indigo-700/50 to-violet-700/50 absolute left-[-40%]   top-[10%] h-[80%] w-[180%] content-[''];
     animation: spin 3s linear infinite;
   }
+  .skewtext {
+    @apply inline-block px-7 rounded-tl-md rounded-br-md mx-4 my-4 default-gradient text-white -skew-x-12;
+  }
 }
 
 @keyframes spin {

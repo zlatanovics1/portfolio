@@ -16,7 +16,7 @@ export default function ContactForm() {
     };
     const result = contactFormSchema.safeParse(formData);
     if (!result.success) {
-      toast.error("Invalid input!");
+      toast.error("Please fill in all the fields appropriately!");
       return;
     }
 

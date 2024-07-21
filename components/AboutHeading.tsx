@@ -18,7 +18,7 @@ export default function AboutHeading({ words }: { words: string[] }) {
             : "translateX(-200%) skewX(-12deg)",
         }}
         // transition={{ duration: 0.35 }}
-        className="inline-block px-7 rounded-tl-md rounded-br-md mx-4 my-4 py-2 default-gradient text-white -skew-x-12 "
+        className="skewtext py-1"
       >
         {words[1]}
       </motion.span>{" "}
@@ -32,7 +32,7 @@ export default function AboutHeading({ words }: { words: string[] }) {
             : "translateX(200%) skewX(-12deg)",
         }}
         // transition={{ duration: 0.35 }}
-        className="inline-block px-7 rounded-tl-md rounded-br-md mx-4 my-4 py-2 default-gradient text-white -skew-x-12 "
+        className="skewtext py-1"
       >
         {words[4]}
       </motion.span>

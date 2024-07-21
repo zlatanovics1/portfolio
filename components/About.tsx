@@ -8,7 +8,7 @@ import AboutAttenders from "./AboutAttenders";
 export default function About() {
   return (
     <Section id="about">
-      <h2 className="mb-16">
+      <h2 className="mb-16 text-3xl">
         {/* <Typer strings={["About me"]} className="text-gray-500 text-3xl" /> */}
         About me
       </h2>

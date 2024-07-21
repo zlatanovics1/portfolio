@@ -4,26 +4,28 @@ import DropDownMenu from "./DropDownMenu";
 
 export default function Navbar() {
   return (
-    <nav className="max-w-[1440px] px-10 mx-auto relative flex flex-col mdlg:flex-row justify-between gap-8  text-gray-300 items-start">
-      <Link
-        href="/"
-        className="uppercase cursor-pointer text-lg flex flex-col gap-1 relative"
-      >
-        <span className="font-[500]">strahinja zlatanovic</span>
-        <span className="h-[2px] top-7 left-0 right-0 absolute bg-violet-800"></span>
-      </Link>
-      <div className="mdlg:flex gap-14 hidden">
-        <NavLinks />
-
-        <a
-          href="#contact"
-          className="rounded-xl border-2 transition-all duration-300 border-violet-800 hover:scale-x-10 hover:bg-violet-800 hover:text-inherit text-violet-800 px-6 py-2"
+    <nav className="max-w-[1440px] mx-auto navbar sticky py-5 top-0 left-0 z-50 bg-gray-950/50 bg-clip-padding backdrop-filter backdrop-blur-sm">
+      <div className="relative px-10 flex flex-col mdlg:flex-row justify-between gap-8  text-gray-300 items-start">
+        <Link
+          href="/"
+          className="uppercase cursor-pointer text-lg flex flex-col gap-1 relative"
         >
-          Let&apos;s talk
-        </a>
-      </div>
-      <div className="mdlg:hidden absolute top-0 right-12">
-        <DropDownMenu />
+          <span className="font-[500]">strahinja zlatanovic</span>
+          <span className="h-[2px] top-7 left-0 right-0 absolute bg-violet-800"></span>
+        </Link>
+        <div className="mdlg:flex gap-14 hidden">
+          <NavLinks />
+
+          <a
+            href="#contact"
+            className="rounded-xl border-2 transition-all duration-300 border-violet-800 hover:scale-x-10 hover:bg-violet-800 hover:text-inherit text-violet-800 px-6 py-2"
+          >
+            Let&apos;s talk
+          </a>
+        </div>
+        <div className="mdlg:hidden absolute top-0 right-12">
+          <DropDownMenu />
+        </div>
       </div>
     </nav>
   );

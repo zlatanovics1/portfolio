@@ -6,7 +6,7 @@ import Section from "./Section";
 export default function Projects() {
   return (
     <Section id="projects">
-      <h2 className="mb-32">
+      <h2 className="mb-32 text-3xl">
         {/* <Typer
           className="text-gray-500 text-3xl"
           strings={["Browse through my projects"]}
@@ -18,7 +18,7 @@ export default function Projects() {
           <ProjectItem
             key={project.title}
             {...project}
-            reverse={!Boolean(i % 2)}
+            reverse={Boolean(i % 2)}
           />
         ))}
       </ul>
