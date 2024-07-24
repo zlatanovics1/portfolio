@@ -4,7 +4,7 @@ import Image from "next/image";
 import { MutableRefObject, useRef } from "react";
 
 import courseImage from "@/public/course.jpg";
-import gymImage from "@/public/gym.jpg";
+import gymImage from "@/public/gym70deg.jpg";
 import musicImage from "@/public/music.jpg";
 import laptopImage from "@/public/laptop.jpg";
 
@@ -77,10 +77,11 @@ export default function AboutImages() {
           <Image
             alt="Gym"
             src={gymImage}
+            quality={100}
             sizes="(min-width:1280px) 25vw, 50vw"
-            className="object-cover w-full h-full grayscale"
+            className="object-cover w-full h-full"
           />
-          <div className="absolute inset-0 bg-gradient-to-t from-violet-900/40 to-violet-800/40 " />
+          {/* <div className="absolute inset-0 bg-gradient-to-t from-violet-900/40 to-violet-800/40 " /> */}
         </div>
       </motion.div>
     </motion.div>
