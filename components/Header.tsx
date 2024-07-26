@@ -1,6 +1,6 @@
 import Image from "next/image";
 
-import blobFinal from "@/public/blobfinalreact.webp";
+import blobFinal from "@/public/blobfullfinal.png";
 
 export default function Header() {
   return (
@@ -35,6 +35,7 @@ export default function Header() {
           <Image
             src={blobFinal}
             priority
+            quality={100}
             sizes="(min-width:1280px) 50vw, 100vw"
             className="object-contain rounded-full w-full h-full"
             alt="Blob"

@@ -15,7 +15,7 @@ export default function AboutImages() {
   return (
     <motion.div
       animate={{
-        filter: inView ? "grayscale(0%)" : "grayscale(100%)",
+        // filter: inView ? "grayscale(0%)" : "grayscale(100%)",
         opacity: inView ? 1 : 0,
       }}
       transition={{ duration: 0.5 }}
