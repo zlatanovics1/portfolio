@@ -23,10 +23,10 @@ export default function Experiences() {
       <li className="flex items-center justify-center">
         <div className="rounded-full p-5 w-44 h-44 sm:w-56 sm:h-56 flex flex-col justify-center items-center text-2xl border-indigo-700 border-2">
           <span className="sm:text-sm text-[7px] text-gray-500 -mt-4 mb-2">
-            Web App of the year
+            Devs&apos; app choice
           </span>
           <span className="sm:text-4xl text-3xl text-viol font-semibold text-gray-300 ">
-            1<sup>st</sup>
+            2<sup>st</sup>
           </span>
           <span className="">place</span>
         </div>
@@ -51,9 +51,9 @@ export default function Experiences() {
       <li className="flex items-center justify-center">
         <div className="rounded-full p-5 w-44 h-44 sm:w-56 sm:h-56 flex flex-col justify-center items-center text-2xl border-purple-700 border-2">
           <span className="text-gray-300 sm:text-4xl text-3xl  font-semibold">
-            {3} free
+            2 Free
           </span>
-          <span className="">courses</span>
+          <span className="text-base">on-site trainings</span>
         </div>
       </li>
     </motion.ul>
