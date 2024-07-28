@@ -12,7 +12,29 @@ const inter = Poppins({
 
 export const metadata: Metadata = {
   title: "Strahinja Zlatanovic",
-  description: "Pixel Perfect Web Developer",
+
+  authors: [
+    {
+      name: "Strahinja Zlatanovic",
+      url: "https://www.linkedin.com/in/strahinja-zlatanovic-91150729b/",
+    },
+  ],
+  description:
+    "Fullstack MERN Developer with lots of hands on experience and mission to make your ideas come to life in no time. Contact me today!",
+  openGraph: {
+    title: "Strahinja Zlatanovic",
+    description:
+      "Fullstack MERN Developer with lots of hands on experience and mission to make your ideas come to life in no time. Contact me today, and wake up happier tomorrow!",
+    url: "https://www.zlatanovics.com/",
+    siteName: "Strahinja's portfolio",
+    images: [
+      {
+        url: "https://www.zlatanovics.com/gym70deg.jpg/",
+      },
+    ],
+    locale: "en_US",
+    type: "website",
+  },
 };
 
 export const viewport: Viewport = {
