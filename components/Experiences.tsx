@@ -53,7 +53,7 @@ export default function Experiences() {
           <span className="text-gray-300 sm:text-4xl text-3xl  font-semibold">
             2 Free
           </span>
-          <span className="text-base">on-site trainings</span>
+          <span className="text-base text-center">on-site trainings</span>
         </div>
       </li>
     </motion.ul>
