@@ -20,7 +20,7 @@ export const metadata: Metadata = {
     },
   ],
   description:
-    "Fullstack MERN Developer with lots of hands on experience and mission to make your ideas come to life in no time. Contact me today!",
+    "I am Strahinja Zlatanovic, Fullstack MERN Developer with lots of hands on experience and mission to make your ideas come to life in no time!",
   openGraph: {
     title: "Strahinja Zlatanovic",
     description:
