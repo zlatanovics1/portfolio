@@ -14,15 +14,14 @@ export default function Header() {
             FullStack Developer
           </h2>
 
-          <p className="mt-12 w-4/5">
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempore
-            quo, eos aliquid rem facere amet temporibus in veniam quis tempora,
-            itaque laborum magni id sapiente.
-          </p>
+          <p className="mt-12 w-4/5"></p>
           <div className="flex gap-8 items-center hiddn translate-y-">
-            <button className="px-5 py-2 text-  mt-8 rounded-md border-violet-700/80 text-violet-700/80 border-2">
+            <a
+              href="#contact"
+              className="px-5 py-2 text-  mt-8 rounded-md border-violet-700/80 text-violet-700/80 border-2 hover:bg-violet-700/80 hover:text-white transition-all"
+            >
               Book a call
-            </button>
+            </a>
             <a
               href="#socialProof"
               className="text-lg  mt-8 hover:translate-y-1 hover:text-gray-300 transition-all duration-300"
