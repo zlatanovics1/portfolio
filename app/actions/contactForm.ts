@@ -19,7 +19,7 @@ export async function contactMeSubmit(data: ContactForm) {
 
   try {
     await transporter.sendMail({
-      from: `Portfolio Contact Me ${process.env.EMAIL}`,
+      from: `Portfolio Contact Me <${process.env.EMAIL}>`,
       to: process.env.EMAIL,
       subject: `${data.name} just contacted you!`,
       text: `\n
