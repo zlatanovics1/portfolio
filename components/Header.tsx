@@ -10,7 +10,7 @@ export default function Header() {
           <h1 className="font-bold text-7xl mb-5 text-gray-200">
             Hi, I&apos;m <span className="">Strahinja</span>
           </h1>
-          <h2 className="text-3xl sm:text-5xl  mt-5 font-semibold text-transparent bg-clip-text default-gradient neon">
+          <h2 className="text-3xl sm:text-5xl  mt-5 font-semibold neon">
             FullStack Developer
           </h2>
 
