@@ -27,7 +27,7 @@ export default function ProjectItem({
     function () {
       if (!inView) return;
       setTimeout(() => {
-        const t = setInterval(() => {
+        const t: ReturnType<typeof setInterval> = setInterval(() => {
           if (lettersLoaded >= headline.length) return clearInterval(t);
           setLettersLoaded((cur) => cur + 1);
         }, 13);
