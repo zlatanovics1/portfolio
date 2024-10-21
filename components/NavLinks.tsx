@@ -1,6 +1,6 @@
 "use client";
 
-import { links } from "@/static-data";
+import { links } from "@/utils/static-data";
 import { motion } from "framer-motion";
 import { useState } from "react";
 

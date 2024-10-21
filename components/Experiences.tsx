@@ -43,13 +43,16 @@ export default function Experiences() {
       <li className="flex items-center justify-center">
         <div className="rounded-full p-5 w-44 h-44 sm:w-56 sm:h-56 flex flex-col justify-center items-center text-2xl border-indigo-600 border-2">
           <span className="text-gray-300 sm:text-3xl text-2xl  font-semibold">
-            {3}+ years
+            {4}+ years
           </span>
           <span className="">experience</span>
         </div>
       </li>
       <li className="flex items-center justify-center">
         <div className="rounded-full p-5 w-44 h-44 sm:w-56 sm:h-56 flex flex-col justify-center items-center text-2xl border-purple-700 border-2">
+          <span className="sm:text-sm text-[7px] text-gray-500 -mt-4 mb-2">
+            Volunteering
+          </span>
           <span className="text-gray-300 sm:text-4xl text-3xl  font-semibold">
             2 Free
           </span>

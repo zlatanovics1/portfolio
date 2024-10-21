@@ -1,8 +1,8 @@
 "use client";
 
 import { useState } from "react";
-import { AnimatePresence, motion } from "framer-motion";
-import { aboutMe } from "@/static-data";
+import { motion } from "framer-motion";
+import { aboutMe } from "@/utils/static-data";
 
 const dist = ["top-2", "top-1/2 -translate-y-1/2", "bottom-2"];
 
@@ -10,7 +10,7 @@ export default function AboutMeSteps() {
   const [active, setActive] = useState(0);
 
   return (
-    <div className="text-xl relative h-60 ml-4">
+    <div className="text-xl relative h-64 ml-4">
       <div className="absolute top-0 bottom-0 left-0 h-full w-[3px] rounded-xl bg-gray-800" />
       <motion.div
         animate={{ height: `calc(${active * 50}% - ${0.5 * active}rem)` }}
@@ -36,7 +36,7 @@ export default function AboutMeSteps() {
         ))}
       </ul>
 
-      <div className="ml-8 mt-4 text-lg relative">
+      <div className="ml-8 mt-4 text-base relative">
         {aboutMe.map((about, i) => (
           <motion.p
             key={about}

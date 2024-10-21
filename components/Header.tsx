@@ -17,8 +17,9 @@ export default function Header() {
           <p className="mt-12 w-4/5"></p>
           <div className="flex gap-8 items-center hiddn translate-y-">
             <a
-              href="#contact"
-              className="px-5 py-2 text-  mt-8 rounded-md border-violet-700/80 text-violet-700/80 border-2 hover:bg-violet-700/80 hover:text-white transition-all"
+              href="https://calendly.com/strahinja-zlatanovic/30min"
+              target="_blank"
+              className="px-5 py-2 mt-8 rounded-md border-violet-700/80 text-violet-700/80 border-2 hover:bg-violet-700/80 hover:text-white transition-all"
             >
               Book a call
             </a>

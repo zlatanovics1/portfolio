@@ -3,7 +3,7 @@ import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 import { BiMenu } from "react-icons/bi";
 import { CgClose } from "react-icons/cg";
-import { links } from "@/static-data";
+import { links } from "@/utils/static-data";
 
 export default function DropDownMenu() {
   const [open, setOpen] = useState(false);

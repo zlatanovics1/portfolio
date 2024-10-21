@@ -3,7 +3,7 @@ import { useWorkWithMe } from "@/context/WorkWithMeContextProvider";
 import {
   BenefitsHeadings as headings,
   BenefitsDescriptions as descriptions,
-} from "@/static-data";
+} from "@/utils/static-data";
 import { GiTalk } from "react-icons/gi";
 import { MdMoney } from "react-icons/md";
 import { SiSpeedtest } from "react-icons/si";
@@ -39,12 +39,12 @@ export default function WhatIOfferSteps() {
         />
       </div>
       <div className="pt-3 space-y-10 grow">
-        <h4 className="text-2xl text-gray-300 font-semibold">
+        <h4 className="text-xl text-gray-300 font-semibold">
           {/* <Typer strings={[headings[activePoint - 1] + "."]} /> */}
           {[headings[activePoint - 1]]}
         </h4>
 
-        <p className="text-lg">{descriptions[activePoint - 1]}</p>
+        <p className="">{descriptions[activePoint - 1]}</p>
       </div>
     </div>
   );

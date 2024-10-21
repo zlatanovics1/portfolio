@@ -17,20 +17,20 @@ export const metadata: Metadata = {
   authors: [
     {
       name: "Strahinja Zlatanovic",
-      url: "https://www.linkedin.com/in/strahinja-zlatanovic-91150729b/",
+      url: "https://www.linkedin.com/in/strahinja-zlatanovic/",
     },
   ],
   description:
-    "I am Strahinja Zlatanovic, Fullstack MERN Developer with lots of hands on experience and mission to make your ideas come to life in no time!",
+    "Tech enthusiast who builds and improves web apps that people love to use.",
   openGraph: {
     title: "Strahinja Zlatanovic",
     description:
-      "Fullstack MERN Developer with lots of hands on experience and mission to make your ideas come to life in no time. Contact me today, and wake up happier tomorrow!",
+      "Fullstack Engineer with lots of hands on experience and mission to secure your success in no time. Contact me today, and wake up happier tomorrow!",
     url: "https://www.zlatanovics.com/",
     siteName: "Strahinja's portfolio",
     images: [
       {
-        url: "https://www.zlatanovics.com/gym70deg.jpg/",
+        url: "https://www.zlatanovics.com/mewarmer.jpg/",
       },
     ],
     locale: "en_US",

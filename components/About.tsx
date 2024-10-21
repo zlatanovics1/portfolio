@@ -8,7 +8,7 @@ import AboutAttenders from "./AboutAttenders";
 export default function About() {
   return (
     <Section id="about">
-      <h2 className="mb-16 text-3xl">
+      <h2 className="mb-16 text-2xl">
         {/* <Typer strings={["About me"]} className="text-gray-500 text-3xl" /> */}
         About me
       </h2>
@@ -19,13 +19,13 @@ export default function About() {
             words={["Where", "passion", "meets", "powerful", "collaboration"]}
           />
           <AboutMeSteps />
-          <div className="flex flex-wrap gap-5 items-center mt-8">
+          {/* <div className="flex flex-wrap gap-5 items-center mt-8">
             <AboutAttenders />
             <p className="sm:text-xl">
               <span className="text-violet-700">30+</span> satisfied course
               attenders
             </p>
-          </div>
+          </div> */}
         </div>
         <AboutImages />
       </div>

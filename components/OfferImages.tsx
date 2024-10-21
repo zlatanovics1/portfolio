@@ -4,8 +4,8 @@ import { motion } from "framer-motion";
 import Image from "next/image";
 
 // images
-import performanceSvg from "@/public/performance.svg";
-import salesSvg from "@/public/sales.svg";
+import performanceSvg from "@/public/programming.svg";
+import thinkingSvg from "@/public/thinking.svg";
 import communicationSvg from "@/public/communication.svg";
 const images = [
   {
@@ -13,8 +13,8 @@ const images = [
     alt: "Performance analytics",
   },
   {
-    src: salesSvg,
-    alt: "Sales analytics",
+    src: thinkingSvg,
+    alt: "Thinking",
   },
   {
     src: communicationSvg,
