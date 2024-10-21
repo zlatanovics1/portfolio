@@ -49,12 +49,12 @@ export default function ProjectItem({
         }}
         className="flex flex-col gap-2 justify-center max-lg:-translate-y-36 col-span-3"
       >
-        <a
+        {/* <a
           href={link}
           className="lg:hidden text-indigo-700 cursor-pointer hover:underline translate-y-4"
         >
           Live app &uarr;
-        </a>
+        </a> */}
         <div className="default-gradient text-2xl bg-clip-text text-transparent mb-1 flex items-center gap-1">
           {/* <span className="text- text">[</span> */}
           <h3 className="text-4xl font-[600]">{title}</h3>
@@ -79,7 +79,7 @@ export default function ProjectItem({
           <p className="text-base">
             <span className="text-indigo-400 text-base">return</span>{" "}
             <span className="text-indigo-400 font-bold">`</span>
-            <span className="text-teal-200">
+            <span className="text-teal-200/90">
               {headline.slice(0, lettersLoaded)}
             </span>
             <span className="text-indigo-400 font-bold">`</span>
