@@ -46,7 +46,7 @@ export const projects: ProjectItemProps[] = [
   {
     title: "Milio",
     description:
-      "Extremly eased process of quality control, 45% faster distributions and lots of satisfied customers. AI Assistant, Multitenancy support, Automated workflows, Digital reports",
+      "Extremely eased process of quality control, 45% faster distributions and lots of satisfied customers. AI Assistant, Multitenancy support, Automated workflows, Digital reports",
 
     mainImage: milioMain,
     slideImage: milioSlide,
@@ -69,7 +69,7 @@ export const BenefitsHeadings = [
 ];
 
 export const BenefitsDescriptions = [
-  "I focus on creating scalable, efficient and innovative solutions that help companies move fast and stay competetive without hitting technical roadblocks. This allows them to focus on growth and new ideas instead of constantly dealing with system issues.",
+  "I focus on creating scalable, efficient and innovative solutions that help companies move fast and stay competitive without hitting technical roadblocks. This allows them to focus on growth and new ideas instead of constantly dealing with system issues.",
   "When I’m passionate about a project, it’s not just a job to me—it’s a mission. This mindset helps me stay focused, push through challenges, and find creative solutions - contributing to long-term success, not just short-term results.",
   "I value clear communication and ensure everyone’s voice is heard. By carefully trading off business goals with customer needs, I create solutions that work for both, leading to long-term success and stronger relationships.",
 ];
